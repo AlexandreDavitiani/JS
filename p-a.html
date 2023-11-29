@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="p-a.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title></title>
+</head>
+<body>
+
+<div class="contaier-black">JAVASCRIPT</div>
+<input type="text" id="number1" placeholder="Введите первое число">
+ <input type="text" id="number2" placeholder="Введите второе число">
+ <button onclick="calculate()">Go</button>
+
+ <script>
+     function calculate() {
+
+         var num1 = parseInt(document.getElementById('number1').value);
+         var num2 = parseInt(document.getElementById('number2').value);
+
+         if (num1 % 2 === 0 && num2 % 2 === 0) {
+             alert("Сумма четных чисел: " + (num1 + num2));
+         } else {
+             alert("Одно из чисел не является четным. Пожалуйста, введите два четных числа.");
+         }
+     }
+ </script>
+<script src="p-a.js"></script>
+</body>
+</html>
